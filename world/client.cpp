@@ -1750,7 +1750,7 @@ bool Client::OPCharCreate(char *name, CharCreate_Struct *cc)
 	strn0cpy(pp.name, name, sizeof(pp.name));
 
 	pp.race             = cc->race;
-	pp.class_           = cc->class_;
+	pp.class_           = Class::Warrior; // rabbi - 13jan2026
 	pp.gender           = cc->gender;
 	pp.deity            = cc->deity;
 	pp.STR              = cc->STR;
