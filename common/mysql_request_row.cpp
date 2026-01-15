@@ -58,17 +58,17 @@ MySQLRequestRow MySQLRequestRow::operator++(int)
 	return tmp;
 }
 
-bool MySQLRequestRow::operator==(const MySQLRequestRow& rhs)
+bool MySQLRequestRow::operator==(const MySQLRequestRow& rhs) const
 {
 	return m_MySQLRow == rhs.m_MySQLRow;
 }
 
-bool MySQLRequestRow::operator!=(const MySQLRequestRow& rhs)
+bool MySQLRequestRow::operator!=(const MySQLRequestRow& rhs) const
 {
 	return m_MySQLRow != rhs.m_MySQLRow;
 }
 
-char* MySQLRequestRow::operator[](int index)
+char* MySQLRequestRow::operator[](int index) const
 {
 	return m_MySQLRow[index];
 }

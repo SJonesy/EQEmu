@@ -27,8 +27,8 @@ public:
 	MySQLRequestRow& operator=(MySQLRequestRow& moveItem);
 	MySQLRequestRow& operator++();
 	MySQLRequestRow operator++(int);
-	bool operator==(const MySQLRequestRow& rhs);
-	bool operator!=(const MySQLRequestRow& rhs);
+	bool operator==(const MySQLRequestRow& rhs) const;
+	bool operator!=(const MySQLRequestRow& rhs) const;
 	MySQLRequestRow operator*();
-	char* operator[](int index);
+	char* operator[](int index) const;
 };
